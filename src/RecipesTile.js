@@ -6,7 +6,7 @@ export default function RecipesTile({recipe}) {
      recipe["recipe"]["image"].match(/\.(jpg|jpeg|gif|png)$/)!= null &&(
        <div className="recipe" onClick={ ()=>{window.open(recipe["recipe"]["url"])}}>
 
-        <img src={recipe["recipe"]["image"]}/>
+        <img src={recipe["recipe"]["image"]} alt="recipe image"/>
         <p className="recipe-para">{recipe["recipe"]["label"]}</p>
 
        </div>
